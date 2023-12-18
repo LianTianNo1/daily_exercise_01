@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style type="text/css">
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f2f2f2;
+            }
+
+            h1 {
+                margin: 0;
+            }
+
+            main {
+                margin: 20px auto;
+                width: 100%;
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            #box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .buttons {
+                margin-bottom: 20px;
+            }
+
+            button {
+                margin: 10px;
+                padding: 12px 12px;
+                background-color: #ffffff;
+                color: #454545;
+                border: none;
+                border-radius: 36px;
+                cursor: pointer;
+                box-shadow: 2px 5px 10px #e4e4e4;
+                font-size: 12px;
+            }
+
+            .background-div {
+                margin-bottom: 20px;
+            }
+
+            .background-btn {
+                margin: 10px;
+                padding: 12px 12px;
+                background-color: #ffffff;
+                color: #cd9753;
+                border: none;
+                border-radius: 36px;
+                cursor: pointer;
+            }
+
+            .content {
+                width: 80%;
+                background-color: #ffd691;
+                padding: 20px;
+            }
+
+            h2 {
+                margin-top: 0;
+            }
+
+            #todo-form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 10px;
+                gap: 10px;
+            }
+
+            .input-field {
+                padding: 10px;
+                flex: 1;
+            }
+
+            .submit-btn {
+                padding: 10px 20px;
+                background-color: #ffffff;
+                color: #cd9753;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            .list {
+                height: 400px;
+            }
+
+            .item {
+                height: 40px;
+                border-radius: 4px;
+                line-height: 40px;
+                padding: 8px;
+                margin-bottom: 8px;
+                background-color: #fff;
+            }
+
+            .item:hover {
+                background-color: #CCC;
+            }
+
+            .hidden {
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <div class="buttons">
+                <button class="start-btn">开始录制</button>
+                <button class="stop-btn">结束录制</button>
+            </div>
+            <div id="box">
+                <section class="content">
+                    <div class="background-div">
+                        <button class="background-btn">修改背景</button>
+                    </div>
+                    <div id="todo-form">
+                        <input type="text"
+                               class="input-field"
+                               placeholder="todo">
+                        <button type="submit"
+                                class="submit-btn">添加</button>
+                    </div>
+                    <div class="list"></div>
+                </section>
+            </div>
+            <img src=""
+                 alt=""
+                 class="hidden">
+        </main>
+        <script src="https://cdn.bootcss.com/html2canvas/0.5.0-beta4/html2canvas.min.js" defer></script>
+        <script src="./recorder.js" defer></script>
+    </body>
+
+</html>
